@@ -1,4 +1,4 @@
-# Bench bridge rectifier
+# Power rail probe
 
 A low-noise power rail oscilloscope probe, based on the excellent writeup by
 Andrew Levido and published in [Circuit Cellar](https://circuitcellar.com/research-design-hub/projects/building-a-power-rail-probe/)

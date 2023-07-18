@@ -23,6 +23,10 @@ It should be connected to an oscilloscope set to 50-ohm input impedance.
  * PCB layout
  * Testing and characterisation
 
+## Schematic
+
+[View on KiCanvas!](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)
+
 ## Bill of materials
 
  * LMP7731 Ultra-low noise precision RRIO opamp

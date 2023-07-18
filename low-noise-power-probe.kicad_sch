@@ -3053,6 +3053,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b192d7c7-f913-466e-bad3-8b6eb490841b)
   )
+  (text "STUSB4500 must be programmed once\nto request 9/15/20V from PD source"
+    (at 339.09 238.76 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid ca370966-dff8-45a9-8dd5-7ec1983180eb)
+  )
 
   (label "USB_PDO3" (at 231.775 244.475 270)
     (effects (font (size 1.27 1.27)) (justify right bottom))

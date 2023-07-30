@@ -38,7 +38,7 @@ The theoretical noise introduced by the probe is 23.64 µVrms over the 1GHz
 design bandwidth. Actual noise levels will be slightly higher in the finished
 product.
 
-<img src="./doc/noise-analysis-lmp7731-opa322.png" alt="Power rail probe, front panel layout diagram" width="300">
+<img src="./doc/noise-analysis-lmp7731-opa322.png" alt="Power rail probe, front panel layout diagram" width="600">
 [PDF](doc/noise-analysis.pdf) [ODS](noise-analysis.ods) [XLSX](noise-analysis.xlsx)
 
 ## Bill of materials

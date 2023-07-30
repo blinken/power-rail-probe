@@ -12,9 +12,9 @@ allowing power supply ripple and transients to be viewed.
  * DC input impedance 50kΩ
  * Attenuation of 1:1.2 or better
  * Active signal range ±1V
- * Noise level < X uVrms (X dBm)
+ * Noise level ~23.6 uV rms (-80 dBm)
  * Isolation between chassis/USB and BNC test connectors.
- * Battery powered to minimise noise. Runtime approx X hours.
+ * Battery powered to minimise noise.
  * Li-Ion 18650 batteries rechargeable via USB-C connector (9V+ USB-PD supply required).
 
 It should be connected to an oscilloscope set to 50-ohm input impedance.
@@ -38,8 +38,9 @@ The theoretical noise introduced by the probe is 23.64 µVrms over the 1GHz
 design bandwidth. Actual noise levels will be slightly higher in the finished
 product.
 
-<img src="./doc/noise-analysis-lmp7731-opa322.png" alt="Power rail probe, front panel layout diagram" width="600">
-[PDF](doc/noise-analysis.pdf) [ODS](noise-analysis.ods) [XLSX](noise-analysis.xlsx)
+[[PDF](./doc/noise-analysis.pdf)] [[ODS](./doc/noise-analysis.ods)] [[XLSX](./doc/noise-analysis.xlsx)]
+
+<img src="./doc/noise-analysis-lmp7731-opa322.png" alt="Power rail probe, front panel layout diagram" width="700">
 
 ## Bill of materials
 
@@ -52,13 +53,15 @@ product.
  * Molex 105450-0101 USB-C receptacle
  * An aluminium extrusion case suitable for a 70x114mm board - eg, [AliExpress](https://www.aliexpress.com/item/1005003326971939.html)
 
-<img src="./doc/case.png" alt="Aluminium enclosure 70x115mm internal size" width="300">
-<img src="./doc/case-diagram.png" alt="Aluminium enclosure, diagram with dimensions" width="300">
+<img src="./doc/case.png" alt="Aluminium enclosure 70x115mm internal size" width="400">
+<img src="./doc/case-diagram.png" alt="Aluminium enclosure, diagram with dimensions" width="400">
 
 ## Front/rear panel layout
 
-<img src="./doc/front-panel-sketch.png" alt="Power rail probe, front panel layout diagram" width="300">
-<img src="./doc/rear-panel-sketch.png" alt="Power rail probe, rear panel layout diagram" width="300">
+Click to expand.
+
+<img src="./doc/front-panel-sketch.png" alt="Power rail probe, front panel layout diagram" width="400">
+<img src="./doc/rear-panel-sketch.png" alt="Power rail probe, rear panel layout diagram" width="400">
 
 ## License
 

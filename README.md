@@ -2,7 +2,7 @@
 
 An Open Hardware low-noise power rail oscilloscope probe, based on the excellent writeup by
 [Andrew Levido](https://circuitcellar.com/research-design-hub/projects/building-a-power-rail-probe/)
-[PDF archive](doc/circuit_cellar-building_a_power_rail_probe.pdf)
+[[PDF archive](doc/circuit_cellar-building_a_power_rail_probe.pdf)]
 
 The probe accepts a connection from a power rail under test, via a 50-ohm
 cable. AC is passed, and an adjustable offset is applied to the DC voltage,

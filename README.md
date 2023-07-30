@@ -19,13 +19,17 @@ allowing power supply ripple and transients to be viewed.
 
 It should be connected to an oscilloscope set to 50-ohm input impedance.
 
-**This project is not yet complete. Outstanding work -**
+## Under construction 
+
+**This project is not yet complete. Outstanding work includes -**
  * PCB layout
  * Testing and characterisation
 
+[Feedback and comments on the design](https://github.com/blinken/power-rail-probe/issues) are very much appreciated.
+
 ## Schematic
 
-[View on KiCanvas!](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)
+[View on KiCanvas.](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)
 
 ## Noise analysis
 

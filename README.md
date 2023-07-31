@@ -29,7 +29,15 @@ It should be connected to an oscilloscope set to 50-ohm input impedance.
 
 ## Schematic
 
-[View on KiCanvas.](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)
+[[PDF](doc/schematic.pdf)] [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)]
+
+<img src="./doc/schematic.png" alt="Power rail probe, schematic" width="700">
+
+## Layout
+
+[[PDF](doc/layout.pdf)] [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)]
+
+<img src="./doc/layout.png" alt="Power rail probe, PCB layout" width="700">
 
 ## Noise analysis
 

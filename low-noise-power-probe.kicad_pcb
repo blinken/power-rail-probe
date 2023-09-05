@@ -1042,7 +1042,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ea6824f1-44de-4ef0-a16f-0de71000b736)
     )
-    (fp_text value "USB_C_Receptacle" (at 0 5.935 180 unlocked) (layer "F.Fab")
+    (fp_text value "USB_C_Receptacle" (at 0 5.935 180 unlocked) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5b0c3d9f-c0be-46b6-a2ba-1ac69ca7484d)
     )

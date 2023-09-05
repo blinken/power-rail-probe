@@ -6,7 +6,7 @@
 
   (title_block
     (title "Low-noise power rail probe")
-    (date "2023-07-30")
+    (date "2023-09-05")
     (rev "1.0")
     (company "https://github.com/blinken/power-rail-probe")
     (comment 2 "Based on design by Andrew Levido")

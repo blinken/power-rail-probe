@@ -21,9 +21,8 @@ It should be connected to an oscilloscope set to 50-ohm input impedance.
 
 ## Under construction 
 
-**This project is not yet complete. Outstanding work includes -**
- * PCB layout
- * Testing and characterisation
+**This project is not yet complete. The board layout is finished, but has not
+yet been manufactured, tested, or characterised.**
 
 [Feedback and comments on the design](https://github.com/blinken/power-rail-probe/issues) are very much appreciated.
 
@@ -56,13 +55,20 @@ product.
 
 ## Bill of materials
 
+[[CSV](./bom/low-noise-power-probe-bom-pcba.csv)]
+
  * [LMP7731](https://www.ti.com/lit/ds/symlink/lmp7731.pdf) Ultra-low noise precision RRIO opamp
  * [OPA322](https://www.ti.com/lit/ds/symlink/opa322.pdf) 20-MHz low-noise 1.8-V RRIO opamp
- * ADP7142AUJZ-2.5 +2.5V 200 mA low noise LDO Linear Regulator
- * ADP7182AUJZ-2.5 -2.5V 200 mA low noise LDO Linear Regulator
- * MCP73213T-A6SI/MF Dual-cell, Li-Ion/Li-Polymer charge management controller, 8.4V float
- * STUSB4500QTR Standalone USB PD sink controller
- * Molex 105450-0101 USB-C receptacle
+ * [ADP7142AUJZ-2.5](https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7142.pdf) +2.5V 200 mA low noise LDO Linear Regulator
+ * [ADP7182AUJZ-2.5](https://www.analog.com/media/en/technical-documentation/data-sheets/ADP7182.pdf) -2.5V 200 mA low noise LDO Linear Regulator
+ * [MCP73213T-A6SI/MF](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/20002190D.pdf) Dual-cell, Li-Ion/Li-Polymer charge management controller, 8.4V float
+ * [HUSB238](https://en.hynetek.com/uploadfiles/site/219/news/1ad9e8fa-b39c-46a5-a984-152771d4ac69.pdf) Standalone USB PD sink controller
+ * 2x [Amphenol 031-5431-10RFX](https://www.farnell.com/cad/2353820.pdf) isolated BNC connectors
+ * [Multicomp 1M31T2B4M7QE](https://www.farnell.com/datasheets/1810474.pdf) 3PDT switch
+ * [Molex 105450-0101](https://www.molex.com/en-us/products/part-detail/1054500101) USB-C receptacle
+ * [Nidec M-1303](https://www.mouser.co.uk/datasheet/2/972/m-1827099.pdf) 5k 3-turn potentiometer
+ * [DC050-T](https://datasheet.lcsc.com/lcsc/1912111437_SHOU-HAN-DC050-T_C431534.pdf) barrel jack connector
+ * Selection of SMD resistors, capacitors, LEDs and diodes as marked
  * An aluminium extrusion case suitable for a 70x114mm board - eg, [AliExpress](https://www.aliexpress.com/item/1005003326971939.html)
 
 <img src="./doc/case.png" alt="Aluminium enclosure 70x115mm internal size" width="400">

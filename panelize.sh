@@ -2,7 +2,7 @@
 
 kikit panelize  \
   --layout 'grid; rows: 1; cols: 1; space: 3mm;' \
-  --source 'tolerance: 15mm' \
+  --source 'tolerance: 100mm' \
   --cuts vcuts \
   --framing 'frame; width: 5mm; space: 0mm;' \
   --tooling '3hole; hoffset: 2.5mm; voffset: 2.5mm; size: 1.5mm' \

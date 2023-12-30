@@ -1,13 +1,13 @@
 # Power rail probe
 
-<img src="./doc/4.jpg" width=700px />
+<img src="./doc/4-crop.jpg" />
 
-**An Open Hardware low-noise power rail oscilloscope probe**, based on the excellent writeup by
+**An Open Hardware low-noise power rail oscilloscope probe**, loosely based on the excellent writeup by
 [Andrew Levido](https://circuitcellar.com/research-design-hub/projects/building-a-power-rail-probe/)
 [[PDF archive](doc/circuit_cellar-building_a_power_rail_probe.pdf)].
 
 The probe allows you to measure millivolt-level ripple on a power rail up to 20V,
-using a normal oscilloscope, by applying a vertical offset. It costs <10% of the price of the [Tektronix TPR1000](https://www.tek.com/en/datasheet/active-power-rail-probes).
+using a normal oscilloscope, by applying a vertical offset. This open design costs <10% of the price of the [Tektronix TPR1000](https://www.tek.com/en/datasheet/active-power-rail-probes).
 
 Here's how it works:
 
@@ -15,16 +15,20 @@ Here's how it works:
 
 The probe is directly connected to a power rail you're interested in (eg, via a
 1X oscilloscope probe, or a direct cable connection).  AC is passed, and an
-adjustable offset is applied to the DC voltage.  Your oscilloscope sees 0V DC,
-allowing power supply ripple and transients to be viewed at the 1 mV/div
-setting, rather than 5 V/div. It's effectively a much more powerful DC offset
-function for your oscilloscope.
+adjustable offset is applied to the DC voltage.
+
+Your oscilloscope sees 0V DC, allowing power supply ripple and transients to be
+viewed at the 1 mV/div setting, rather than 5 V/div. It's effectively a much
+more powerful DC offset function for your oscilloscope.
 
 ## Specifications
 
+### v1.0
+
  * Max voltage offset ±20V
  * Input impedance 50kΩ (0 - 30kHz) / 50Ω (30kHz - 1GHz)
- * Average signal attenuation of 1:1.15 (approx. -0.5 dB) * Noise <500 µV<sub>p-p</sub> over full bandwidth
+ * Average signal attenuation of 1:1.2 (approx. -0.9 dB +/- 1.5dB) to 500MHz
+ * Noise <500 µV<sub>p-p</sub> over full bandwidth
  * Active signal range ±1V
  * Isolation between chassis/USB and BNC test connectors
  * Battery powered to minimise noise
@@ -37,17 +41,28 @@ works best with inputs <1-ohm impedance.
 
 ## How to buy
 
-The probe is available to purchase fully assembled from the distributors below
+Version 1.0 is available to purchase fully assembled from the distributors below
 for approx. £299 (USD $380, EUR €345). Purchasing a fully assembled unit covers
 the costs of development!
 
  * [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe)
 
-If you would like to assemble the probe yourself, blank PCBs and enclosures are also available at [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe).
+If you would like to assemble the v1.0 probe yourself, blank PCBs, enclosures and machined front panels are also available at [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe).
 
 Gerber files and a full BOM & schematic are available below under a CC BY-SA 4.0 license.
 
+## Versions
+
+The project under active development, and there's a couple of versions:
+
+| Version | Status | Description | Performance |
+| ------- | ------ | ----------- | ---------- |
+| v1.0 | Completed and available | Original proof-of-concept | Functions well. Frequency response flat within 2dB to 500MHz. Similar (or slightly better) noise levels vs v1.1 |
+| v1.1 | Under development: design validated, PCB layout ongoing | Includes additional compensation & lessons learned from v1.0 | Untested. Frequency response estimated from simulation as flat to within 1dB to 1GHz |
+
 ## Schematic
+
+### v1.0
 
 [[PDF](doc/schematic.pdf)] [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)]
 
@@ -55,37 +70,51 @@ Gerber files and a full BOM & schematic are available below under a CC BY-SA 4.0
 
 ## Layout
 
+### v1.0
+
 [[PDF](doc/layout.pdf)] [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)]
 
 <img src="./doc/layout.png" alt="Power rail probe, PCB layout" width="700">
 
 ## Frequency response
 
-Frequency response is flat within 1dB, with the exception of a 2.5dB peak at 71.8kHz.
+### v1.0
 
-<img src="./doc/spice/v1.1-ac-response.jpg" alt="Chart frequency response 10Hz and 1GHz" width="700">
+Performance is flat within 1.3dB to 500MHz, aside from a 3.7dB dip at approx 1.2MHz.
+
+<img src="./doc/v1.0/characterisation/freq-S12-5MHz.jpg" alt="Chart of frequency response from 300kHz to 5MHz" width="700">
+
+<img src="./doc/v1.0/characterisation/freq-S12-500MHz.jpg" alt="Chart of frequency response from 300kHz to 500MHz" width="700">
+
+### v1.1
+
+This version has not yet been manufactured, and the results below are from simulation in SPICE.
+
+Frequency response is flat within 0.5dB to 1GHz, with the exception of a 2.5dB peak at 71.8kHz.
+
+<img src="./doc/v1.1/spice/v1.1-ac-response.jpg" alt="Chart frequency response 10Hz and 1GHz" width="700">
 
 The chart above was obtained through simulation with TINA-TI SPICE, assuming an
 input impedance of 0.1Ω. Measuring the frequency response with a 50Ω source
 (ie. a standard VNA) will produce different results.
 
-[[Simulation files](./doc/spice)]
+[[Simulation files](./doc/v1.1/spice)]
 
 ## Noise analysis
 
 The design aims to minimise the noise introduced by the instrument. Low-noise
-operation is achieved through careful layout to minimise noise-generating
-elements in the critical path, plus battery operation.  Batteries are recharged
-when the instrument is turned off.
+operation by avoiding semiconductors in the critical path, plus battery
+operation. Batteries are recharged when the instrument is turned off.
 
-The total noise introduced by the probe ([simulated in TINA-TI SPICE v9](./doc/spice)) is
+### v1.0 & v1.1
+
+The total noise introduced by the probe ([simulated in TINA-TI SPICE v9](./doc/v1.1/spice)) is
 78.7 µVrms when measuring over the total instrument bandwidth 10Hz and 1GHz.
 
 The noise introduced depends on the bandwidth of the measurement. Reducing the
 measured bandwidth will reduce the noise introduced, and so the numbers below
 are a worst-case upper limit. For example, a measurement between 10kHz and
 20kHz, the probe will introduce 12.9 µVrms noise (-84.8 dBm).
-
 
 | Measurement bandwidth  | Total RMS noise | Total peak-to-peak noise (6σ) | Power (Z<sub>0</sub>=50Ω) |
 | --- | --- | --- | --- |
@@ -97,12 +126,14 @@ are a worst-case upper limit. For example, a measurement between 10kHz and
 | 10Hz - 100MHz | 78.5 µV<sub>rms</sub> | 471.0 µV<sub>p-p</sub> | -69.1 dBm |
 | 10Hz - 1GHz | 78.7 µV<sub>rms</sub> | 472.2 µV<sub>p-p</sub> | -69.1 dBm |
 
-<img src="./doc/spice/v1.1-total-noise.jpg" alt="Chart of total noise between 10Hz and 1GHz" width="700">
+<img src="./doc/v1.1/spice/v1.1-total-noise.jpg" alt="Chart of total noise between 10Hz and 1GHz" width="700">
 
-<img src="./doc/spice/v1.1-output-noise.jpg" alt="Chart of output noise between 10Hz and 1GHz" width="700">
+<img src="./doc/v1.1/spice/v1.1-output-noise.jpg" alt="Chart of output noise between 10Hz and 1GHz" width="700">
 
 
 ## Bill of materials
+
+### v1.0
 
 [[CSV](./bom/low-noise-power-probe-bom-pcba.csv)]
 
@@ -120,10 +151,14 @@ are a worst-case upper limit. For example, a measurement between 10kHz and
  * Selection of SMD resistors, capacitors, LEDs and diodes as marked
  * An aluminium extrusion case suitable for a 70x114mm board - eg, [AliExpress](https://www.aliexpress.com/item/1005003326971939.html)
 
+A blank PCB, aluminium extrusion case and machined front/rear panels can be purchased as a kit from [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe?variant=43212423233713).
+
 <img src="./doc/case.png" alt="Aluminium enclosure 70x115mm internal size" width="400">
 <img src="./doc/case-diagram.png" alt="Aluminium enclosure, diagram with dimensions" width="400">
 
 ## Front/rear panel layout
+
+### v1.0
 
 Click to expand.
 

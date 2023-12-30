@@ -89,8 +89,6 @@ are a worst-case upper limit. For example, a measurement between 10kHz and
 
 <img src="./doc/spice/v1.1-output-noise.jpg" alt="Chart of output noise between 10Hz and 1GHz" width="700">
 
-[[PDF](./doc/noise-analysis.pdf)] [[ODS](./doc/noise-analysis.ods)] [[XLSX](./doc/noise-analysis.xlsx)]
-
 
 ## Bill of materials
 

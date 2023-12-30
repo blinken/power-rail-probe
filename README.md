@@ -8,7 +8,7 @@ An Open Hardware low-noise power rail oscilloscope probe, based on the excellent
 you to measure millivolt-level ripple on a power rail up to 20V, using a normal
 oscilloscope, by applying a vertical offset. Here's how it works:
 
-<img src="./doc/diagram.png" alt="Connection diagram" width="700">
+<img src="./doc/diagram.png?c=1" alt="Connection diagram" width="700">
 
 The probe accepts a connection from a power rail under test, via a 50-ohm
 cable. AC is passed, and an adjustable offset is applied to the DC voltage.

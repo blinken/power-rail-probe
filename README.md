@@ -4,39 +4,48 @@
 
 **An Open Hardware low-noise power rail oscilloscope probe**, based on the excellent writeup by
 [Andrew Levido](https://circuitcellar.com/research-design-hub/projects/building-a-power-rail-probe/)
-[[PDF archive](doc/circuit_cellar-building_a_power_rail_probe.pdf)]. It allows
-you to measure millivolt-level ripple on a power rail up to 20V, using a normal
-oscilloscope, by applying a vertical offset. Here's how it works:
+[[PDF archive](doc/circuit_cellar-building_a_power_rail_probe.pdf)].
+
+The probe allows you to measure millivolt-level ripple on a power rail up to 20V,
+using a normal oscilloscope, by applying a vertical offset. It costs <10% of the price of the [Tektronix TPR1000](https://www.tek.com/en/datasheet/active-power-rail-probes).
+
+Here's how it works:
 
 <img src="./doc/diagram.png?c=1" alt="Connection diagram" width="700">
 
-The probe accepts a connection from a power rail under test, via a 50-ohm
-cable. AC is passed, and an adjustable offset is applied to the DC voltage.
-Your oscilloscope sees 0V DC, allowing power supply ripple and transients to be
-viewed at 1 mV/div, rather than 5 V/div. It's effectively a much more powerful
-DC offset function for your oscilloscope.
+The probe is directly connected to a power rail you're interested in (eg, via a
+1X oscilloscope probe, or a direct cable connection).  AC is passed, and an
+adjustable offset is applied to the DC voltage.  Your oscilloscope sees 0V DC,
+allowing power supply ripple and transients to be viewed at the 1 mV/div
+setting, rather than 5 V/div. It's effectively a much more powerful DC offset
+function for your oscilloscope.
+
+## Specifications
 
  * Max voltage offset ±20V
  * Input impedance 50kΩ (0 - 30kHz) / 50Ω (30kHz - 1GHz)
- * Average signal attenuation of 1:1.15 (approx. -0.5 dB)
- * Noise <500 µV<sub>p-p</sub> over full bandwidth
+ * Average signal attenuation of 1:1.15 (approx. -0.5 dB) * Noise <500 µV<sub>p-p</sub> over full bandwidth
  * Active signal range ±1V
  * Isolation between chassis/USB and BNC test connectors
  * Battery powered to minimise noise
  * Li-Ion 18650 batteries rechargeable via USB-C connector (9V+ USB-PD supply required) or via DC barrel jack
 
 The probe should be connected to an oscilloscope set to 50-ohm input impedance, and
-works best with inputs <1-ohm impedence.
+works best with inputs <1-ohm impedance.
 
 [Feedback and comments on the design](https://github.com/blinken/power-rail-probe/issues) are very much appreciated.
 
-## Purchase
+## How to buy
 
-The probe is available to purchase fully assembled from the distributors below. The price
-is £299 - a [commercial probe](https://www.tek.com/en/products/oscilloscopes/oscilloscope-probes/power-rail-probes)
-with similar specifications has a list price of £4,850!
+The probe is available to purchase fully assembled from the distributors below
+for approx. £299 (USD $380, EUR €345). Purchasing a fully assembled unit covers
+the costs of development!
 
  * [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe)
+
+If you would like to assemble the probe yourself, blank PCBs and enclosures are also available at [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe).
+
+Gerber files and a full BOM & schematic are available below under a CC BY-SA 4.0 license.
 
 ## Schematic
 
@@ -123,4 +132,4 @@ Click to expand.
 
 ## License
 
-[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)

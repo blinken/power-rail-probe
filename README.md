@@ -41,13 +41,12 @@ works best with inputs <1-ohm impedance.
 
 ## How to buy
 
-Version 1.0 is available to purchase fully assembled from the distributors below
+Version 1.0 is available [to purchase fully assembled here](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe)
 for approx. £299 (USD $380, EUR €345). Purchasing a fully assembled unit covers
 the costs of development!
 
- * [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe)
-
-If you would like to assemble the v1.0 probe yourself, blank PCBs, enclosures and machined front panels are also available at [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe).
+If you would like to assemble the v1.0 probe yourself, blank PCBs, enclosures
+and machined front panels are also available at [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe).
 
 Gerber files and a full BOM & schematic are available below under a CC BY-SA 4.0 license.
 

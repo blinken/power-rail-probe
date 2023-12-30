@@ -57,8 +57,8 @@ The project under active development, and there's a couple of versions:
 
 | Version | Status | Description | Performance |
 | ------- | ------ | ----------- | ---------- |
-| v1.0 | Completed and available | Original proof-of-concept | Functions well. Frequency response flat within 2dB to 500MHz. Similar (or slightly better) noise levels vs v1.1 |
-| v1.1 | Under development: design validated, PCB layout ongoing | Includes additional compensation & lessons learned from v1.0 | Untested. Frequency response estimated from simulation as flat to within 1dB to 1GHz |
+| v1.0 | Completed and available | Original proof-of-concept | Functions well. Frequency response flat within 1.3dB to 500MHz. Similar (or slightly better) noise levels vs v1.1 |
+| v1.1 | Under development: design validated, PCB layout ongoing | Includes additional compensation & lessons learned from v1.0 | Untested. Frequency response estimated from simulation as flat to within 0.5dB to 1GHz |
 
 ## Schematic
 

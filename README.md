@@ -6,12 +6,15 @@ An Open Hardware low-noise power rail oscilloscope probe, based on the excellent
 [Andrew Levido](https://circuitcellar.com/research-design-hub/projects/building-a-power-rail-probe/)
 [[PDF archive](doc/circuit_cellar-building_a_power_rail_probe.pdf)]. It allows
 you to measure millivolt-level ripple on a power rail up to 20V, using a normal
-oscilloscope.
+oscilloscope, by applying a vertical offset. Here's how it works:
+
+<img src="./doc/diagram.png" alt="Connection diagram" width="700">
 
 The probe accepts a connection from a power rail under test, via a 50-ohm
 cable. AC is passed, and an adjustable offset is applied to the DC voltage.
 Your oscilloscope sees 0V DC, allowing power supply ripple and transients to be
-viewed in high resolution.
+viewed at 1 mV/div, rather than 5 V/div. It's effectively a much more powerful
+DC offset function for your oscilloscope.
 
  * Max voltage offset ±20V
  * Input impedance 50kΩ (0 - 30kHz) / 50Ω (30kHz - 1GHz)
@@ -29,7 +32,7 @@ works best with inputs <1-ohm impedence.
 
 ## Purchase
 
-The probe is available to purchase from the distributors below. The list price
+The probe is available to purchase fully assembled from the distributors below. The price
 is £299 - a [commercial probe](https://www.tek.com/en/products/oscilloscopes/oscilloscope-probes/power-rail-probes)
 with similar specifications has a list price of £4,850!
 

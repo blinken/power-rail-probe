@@ -2,7 +2,7 @@
 
 <img src="./doc/4.jpg" width=700px />
 
-An Open Hardware low-noise power rail oscilloscope probe, based on the excellent writeup by
+**An Open Hardware low-noise power rail oscilloscope probe**, based on the excellent writeup by
 [Andrew Levido](https://circuitcellar.com/research-design-hub/projects/building-a-power-rail-probe/)
 [[PDF archive](doc/circuit_cellar-building_a_power_rail_probe.pdf)]. It allows
 you to measure millivolt-level ripple on a power rail up to 20V, using a normal

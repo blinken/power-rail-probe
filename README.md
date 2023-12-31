@@ -42,8 +42,7 @@ works best with inputs <1-ohm impedance.
 ## How to buy
 
 Version 1.0 is available [to purchase fully assembled here](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe)
-for approx. £299 (USD $380, EUR €345). Purchasing a fully assembled unit covers
-the costs of development!
+for approx. £249 (USD $317, EUR €287). Purchasing a fully assembled unit helps to fund development!
 
 If you would like to assemble the v1.0 probe yourself, blank PCBs, enclosures
 and machined front panels are also available at [paradar.co.uk](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe).
@@ -102,8 +101,8 @@ input impedance of 0.1Ω. Measuring the frequency response with a 50Ω source
 ## Noise analysis
 
 The design aims to minimise the noise introduced by the instrument. Low-noise
-operation by avoiding semiconductors in the critical path, plus battery
-operation. Batteries are recharged when the instrument is turned off.
+operation is achieved with battery operation, and by avoiding semiconductors in
+the critical path.  Batteries are recharged when the instrument is turned off.
 
 ### v1.0 & v1.1
 

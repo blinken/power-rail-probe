@@ -60,24 +60,37 @@ The project under active development, and there's a couple of versions:
 
 | Version | Status | Description | Performance |
 | ------- | ------ | ----------- | ---------- |
-| v1.0 | Completed and available | Original proof-of-concept | Functions well. Frequency response flat within 1.3dB to 500MHz. Similar (or slightly better) noise levels vs v1.1 |
-| v1.1 | Under development: design validated, PCB layout ongoing | Includes additional compensation & lessons learned from v1.0 | Untested. Frequency response estimated from simulation as flat to within 0.5dB to 1GHz |
+| [v1.0](https://github.com/blinken/power-rail-probe/tree/v1.0) | Completed, characterised and [available](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe) | Initial proof-of-concept | Functions well. Frequency response flat within 1.3dB to 500MHz. Similar (or slightly better) noise levels vs v1.1 |
+| v1.0.1 (HEAD) | Under development | Fix bugs from 1.0 and improve manufacturability | Untested, but likely to be identical to v1.0 |
+| v1.1 | Simulation complete | Includes additional compensation & lessons learned from v1.0 | Untested. Frequency response estimated from simulation as flat to within 0.5dB to 1GHz |
 
 ## Schematic
 
 ### v1.0
 
-[[PDF](doc/schematic.pdf)] [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)]
+[[PDF](doc/schematic.pdf)] [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe%2Fblob%2Fv1.0%2Flow-noise-power-probe.kicad_sch)]
 
 <img src="./doc/schematic.png" alt="Power rail probe, schematic" width="700">
+
+### v1.0.1 / HEAD
+
+This version is under active development.
+
+[[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe%2Fblob%2Fmain%2Flow-noise-power-probe.kicad_sch)]
 
 ## Layout
 
 ### v1.0
 
-[[PDF](doc/layout.pdf)] [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe)]
+[[PDF](doc/layout.pdf)] [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe%2Fblob%2Fv1.0%2Flow-noise-power-probe.kicad_pcb)]
 
 <img src="./doc/layout.png" alt="Power rail probe, PCB layout" width="700">
+
+### v1.0.1 / HEAD
+
+This version is under active development.
+
+[[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe%2Fblob%2Fmain%2Flow-noise-power-probe.kicad_pcb)]
 
 ## Frequency response
 

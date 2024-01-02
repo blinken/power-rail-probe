@@ -11,11 +11,16 @@ using a normal oscilloscope, by applying a vertical offset. This open design cos
 
 Here's how it works:
 
-<img src="./doc/diagram.png?c=1" alt="Connection diagram" width="700">
+<img src="./doc/diagram.png" alt="Connection diagram" width="700">
+
+<img src="./doc/example-measurement-20V-rail.png" alt="Example measurement showing ~50mV ripple on a 20V rail" width="700">
+
+*Measurement of 60mV p-p ripple on a 20V rail (ie. ripple 19.97V - 20.03V) using an inexpensive [Picoscope 2204A](https://www.picotech.com/oscilloscope/2000/picoscope-2000-specifications)*
 
 The probe is directly connected to a power rail you're interested in (eg, via a
 1X oscilloscope probe, or a direct cable connection).  AC is passed, and an
-adjustable offset is applied to the DC voltage.
+adjustable offset is applied to the DC voltage. The offset is fixed, allowing
+DC sag and drift to be examined.
 
 Your oscilloscope sees 0V DC, allowing power supply ripple and transients to be
 viewed at the 1 mV/div setting, rather than 5 V/div. It's effectively a much

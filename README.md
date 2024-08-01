@@ -1,6 +1,6 @@
 # Power rail probe
 
-<img src="./doc/4-crop.jpg" />
+<img src="./doc/v1.0.1/1.0.1-3-2000.JPG" />
 
 **An Open Hardware low-noise power rail oscilloscope probe**, loosely based on the excellent writeup by
 [Andrew Levido](https://circuitcellar.com/research-design-hub/projects/building-a-power-rail-probe/)
@@ -28,13 +28,16 @@ more powerful DC offset function for your oscilloscope.
 
 ## Specifications
 
-### v1.0
+### v1.0.1
 
  * Max voltage offset ±20V
  * Input impedance 50kΩ (0 - 30kHz) / 50Ω (30kHz - 1GHz)
- * Average signal attenuation of 1:1.2 (approx. -0.9 dB +/- 1.5dB) to 500MHz
+ * Average signal attenuation of 1:1.2 (-0.9 dB +/- 1dB)
+ * Frequency response (S12) flat within 1dB through 490MHz
  * Noise <500 µV<sub>p-p</sub> over full bandwidth
  * Active signal range ±1V
+ * Indication of over-range signal (above or below offset setting)
+ * High-precision Nidec M-1305 5-turn potentiometer for accurate offset adjustment
  * Isolation between chassis/USB and BNC test connectors
  * Battery powered to minimise noise
  * Li-Ion 18650 batteries rechargeable via USB-C connector (9V+ USB-PD supply required) or via DC barrel jack
@@ -60,8 +63,8 @@ The project under active development, and there's a couple of versions:
 
 | Version | Status | Description | Performance |
 | ------- | ------ | ----------- | ---------- |
-| [v1.0](https://github.com/blinken/power-rail-probe/tree/v1.0) | Completed, characterised and [available](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe) | Initial proof-of-concept | Functions well. Frequency response flat within 1.3dB to 500MHz. Similar (or slightly better) noise levels vs v1.1 |
-| v1.0.1 (HEAD) | Under development | Fix bugs from 1.0 and improve manufacturability | Untested, but likely to be identical to v1.0 |
+| [v1.0](https://github.com/blinken/power-rail-probe/tree/v1.0) | Completed | Initial proof-of-concept | Functions well. Frequency response flat within 1.3dB to 500MHz. Similar (or slightly better) noise levels vs v1.1 |
+| v1.0.1 | Complete, characterised and [available](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe) | Fix bugs from 1.0 and improve manufacturability | Untested, but likely to be identical to v1.0 |
 | v1.1 | Simulation complete | Includes additional compensation & lessons learned from v1.0 | Untested. Frequency response estimated from simulation as flat to within 0.5dB to 1GHz |
 
 ## Schematic
@@ -72,9 +75,7 @@ The project under active development, and there's a couple of versions:
 
 <img src="./doc/schematic.png" alt="Power rail probe, schematic" width="700">
 
-### v1.0.1 / HEAD
-
-This version is under active development.
+### v1.0.1
 
 [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe%2Fblob%2Fmain%2Flow-noise-power-probe.kicad_sch)]
 
@@ -86,13 +87,23 @@ This version is under active development.
 
 <img src="./doc/layout.png" alt="Power rail probe, PCB layout" width="700">
 
-### v1.0.1 / HEAD
+### v1.0.1
 
 This version is under active development.
 
 [[KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fblinken%2Fpower-rail-probe%2Fblob%2Fmain%2Flow-noise-power-probe.kicad_pcb)]
 
 ## Frequency response
+
+### v1.0.1
+
+The probe's frequency response is flat within 1dB between approximately 3MHz and 490MHz, and flat within 2.5dB between approximately 150kHz and 550Mhz.
+
+<img src="./doc/v1.0.1/1.0.1-fr-3.jpg" alt="Chart of frequency response from 5MHz to 700MHz" width="700">
+
+<img src="./doc/v1.0.1/1.0.1-fr-2.jpg" alt="Chart of frequency response from 200kHz to 10MHz" width="700">
+
+<img src="./doc/v1.0.1/1.0.1-fr-1.jpg" alt="Chart of frequency response from 10kHz to 300kHz" width="700">
 
 ### v1.0
 

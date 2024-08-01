@@ -59,7 +59,7 @@ Gerber files and a full BOM & schematic are available below under a CC BY-SA 4.0
 
 ## Versions
 
-The project under active development, and there's a couple of versions:
+The project is under active development, and there are several versions:
 
 | Version | Status | Description | Performance |
 | ------- | ------ | ----------- | ---------- |

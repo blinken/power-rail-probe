@@ -64,7 +64,7 @@ The project is under active development, and there are several versions:
 | Version | Status | Description | Performance |
 | ------- | ------ | ----------- | ---------- |
 | [v1.0](https://github.com/blinken/power-rail-probe/tree/v1.0) | Completed | Initial proof-of-concept | Functions well. Frequency response flat within 1.3dB to 500MHz. Similar (or slightly better) noise levels vs v1.1 |
-| v1.0.1 | Complete, characterised and [available](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe) | Fix bugs from 1.0 and improve manufacturability | Untested, but likely to be identical to v1.0 |
+| v1.0.1 | Complete, characterised and [available](https://paradar.co.uk/products/low-noise-oscilloscope-power-rail-probe) | Fix bugs from 1.0 and improve manufacturability | Improved frequency response vs v1.0, plus indicators for over/under range |
 | v1.1 | Simulation complete | Includes additional compensation & lessons learned from v1.0 | Untested. Frequency response estimated from simulation as flat to within 0.5dB to 1GHz |
 
 ## Schematic

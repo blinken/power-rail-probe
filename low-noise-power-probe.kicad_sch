@@ -17694,7 +17694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/972/m-1827099.pdf"
 			(at 54.61 73.66 0)
 			(effects
 				(font
@@ -17712,7 +17712,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "M-1303"
+		(property "Part" "M-1305 5k"
 			(at 54.61 73.66 0)
 			(effects
 				(font
@@ -18827,16 +18827,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "3e706109-daa9-4aa4-b173-934c2ab0455a")
+			(uuid "3e706109-daa9-4aa4-b173-934c2ab0455b")
 		)
 		(pin "3"
-			(uuid "b724ea2e-4ecd-4a17-87f9-4d1262d9f6fb")
+			(uuid "b724ea2e-4ecd-4a17-87f9-4d1262d9f6fc")
 		)
 		(pin "2"
-			(uuid "6448bec4-154c-4b43-8006-095c204de564")
+			(uuid "6448bec4-154c-4b43-8006-095c204de565")
 		)
 		(pin "1"
-			(uuid "2ed0194d-e715-4c26-9f8d-dd4b62f4d32b")
+			(uuid "2ed0194d-e715-4c26-9f8d-dd4b62f4d32c")
 		)
 		(instances
 			(project ""

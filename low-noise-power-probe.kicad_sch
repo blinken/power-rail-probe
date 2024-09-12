@@ -20463,9 +20463,9 @@
 		(at 66.04 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e78971de-ba30-42b6-b7db-b57d019f6b3f")
 		(property "Reference" "C2"
 			(at 64.135 67.945 0)

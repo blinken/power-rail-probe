@@ -9510,6 +9510,16 @@
 		)
 		(uuid "43df01a5-4199-4198-9c61-7d68175d8b72")
 	)
+	(text "or LQH32NH100J23L C2045047"
+		(exclude_from_sim no)
+		(at 176.53 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "510d8074-1224-4dcc-8248-498d50d6a067")
+	)
 	(text "USB active indicator"
 		(exclude_from_sim no)
 		(at 339.09 184.15 0)
@@ -17880,7 +17890,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2045047"
+		(property "LCSC" "C2047632"
 			(at 173.99 78.74 0)
 			(effects
 				(font
@@ -17889,7 +17899,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "LQH32NH100J23L"
+		(property "Part" "TFM322512ALMA100MTAA"
 			(at 173.99 78.74 90)
 			(effects
 				(font

@@ -27694,6 +27694,17 @@
 			)
 		)
 	)
+	(gr_text "-"
+		(at 176.1 99.2 0)
+		(layer "F.SilkS")
+		(uuid "37d81e89-124b-40a0-bf80-953446c2cafe")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.25)
+			)
+		)
+	)
 	(gr_text "SCOPE"
 		(at 215.7 184.2 0)
 		(layer "F.SilkS")
@@ -27727,7 +27738,18 @@
 			)
 		)
 	)
-	(gr_text "NIDEC M-1303 5K W/W"
+	(gr_text "-"
+		(at 219.9 171.4 0)
+		(layer "F.SilkS")
+		(uuid "472023a4-2de6-4fcd-94b7-c676376e6ed7")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.25)
+			)
+		)
+	)
+	(gr_text "NIDEC M-1305 5K W/W"
 		(at 176.1 190.025 90)
 		(layer "F.SilkS")
 		(uuid "490a9161-c849-41fb-8f68-5b1f749223ed")
@@ -27817,10 +27839,32 @@
 			)
 		)
 	)
+	(gr_text "+"
+		(at 219.9 99.2 0)
+		(layer "F.SilkS")
+		(uuid "9a7b9a49-ff23-4270-8408-7c8a3e8e1a03")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.25)
+			)
+		)
+	)
 	(gr_text "18650 LI-ION 3.7V NOM."
 		(at 219.9 130.9 90)
 		(layer "F.SilkS")
 		(uuid "a44c2326-09f5-48f1-a1eb-70846fc8d235")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.25)
+			)
+		)
+	)
+	(gr_text "+"
+		(at 176.1 171.6 0)
+		(layer "F.SilkS")
+		(uuid "c51a6bac-66bd-4ea1-8baf-b809864ba3f2")
 		(effects
 			(font
 				(size 1.5 1.5)

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 kikit panelize  \
-  --layout 'grid; rows: 1; cols: 1; space: 3mm;' \
+  --layout 'grid; rows: 1; cols: 2; space: 0mm;' \
   --source 'tolerance: 100mm' \
   --cuts vcuts \
   --framing 'frame; width: 5mm; space: 0mm;' \

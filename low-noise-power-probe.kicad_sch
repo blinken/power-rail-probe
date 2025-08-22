@@ -6836,179 +6836,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "blinken-rf:U.FL2PIN"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP?"
-				(at -7.62 0 90)
-				(effects
-					(font
-						(size 1.143 1.143)
-					)
-				)
-			)
-			(property "Value" ""
-				(at -5.08 0 90)
-				(effects
-					(font
-						(size 1.143 1.143)
-					)
-				)
-			)
-			(property "Footprint" "rf-connectors:U.FL-NoKeepout"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1811091710_HRS-Hirose-U-FL-R-SMT-1-80_C88374.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C88374"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Part" "BWU.FL-IPEX1"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "PROD_ID:CONN-09193"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*U.FL*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "U.FL2PIN_0_1"
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "U.FL2PIN_1_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin bidirectional line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 5.08 0 180)
-					(length 5.08)
-					(name "SIGNAL"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "FEED"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+2V5"
 			(power)
 			(pin_numbers
@@ -7269,6 +7096,17 @@
 		)
 		(uuid "0f4ee402-021c-4af8-ad0b-57925ec2cdaa")
 	)
+	(text "Cell 1 balance = 3.7/(100+270) = 10mA\nCell 2 balance = 3.7/(100+100+150) = 10.5mA"
+		(exclude_from_sim no)
+		(at 259.08 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "19af7f94-2202-4d1b-a44c-2720cb964f76")
+	)
 	(text "Charging indicator"
 		(exclude_from_sim no)
 		(at 508 125.73 0)
@@ -7324,6 +7162,27 @@
 		)
 		(uuid "2a336621-5f15-4bd8-af96-6b6e6b09d705")
 	)
+	(text "RVD"
+		(exclude_from_sim no)
+		(at 281.94 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c9bd45b-2cba-41ae-8bb4-4b86f9f9b17a")
+	)
+	(text "R25/R34 for \ncharacterisation and testing"
+		(exclude_from_sim no)
+		(at 73.66 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2d6f6660-fb10-4abf-8f9b-46c1c18ac66e")
+	)
 	(text "8.4V float voltage (-A6S)"
 		(exclude_from_sim no)
 		(at 99.06 182.88 0)
@@ -7355,6 +7214,17 @@
 			)
 		)
 		(uuid "510d8074-1224-4dcc-8248-498d50d6a067")
+	)
+	(text "RCB2"
+		(exclude_from_sim no)
+		(at 281.94 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "514d7961-5bf7-4052-bd63-e3ca7caeacce")
 	)
 	(text "Overcurrent trip when voltage across\nboth MOSFETs is >180mV = approx. 2.8A (fuse trip @ 500mA)"
 		(exclude_from_sim no)
@@ -7410,6 +7280,27 @@
 			(justify left bottom)
 		)
 		(uuid "8d7e165e-14f5-4303-af1f-8849435346d6")
+	)
+	(text "Was C2828621 5k"
+		(exclude_from_sim no)
+		(at 81.28 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "916e90a4-fda0-4692-809b-941877f65bdb")
+	)
+	(text "RCB1"
+		(exclude_from_sim no)
+		(at 281.94 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9213243c-8f7a-4f34-bc3b-fbadc5b0aa10")
 	)
 	(text "30mV dropout\n10uVrms noise"
 		(exclude_from_sim no)
@@ -7486,6 +7377,17 @@
 			)
 		)
 		(uuid "c6a1b4d1-05ac-4680-8b2e-e0e1bcac0b48")
+	)
+	(text "RCB"
+		(exclude_from_sim no)
+		(at 281.94 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d6169890-0469-4f81-a467-cbea59de70ab")
 	)
 	(text "Request USB-C RDO:\n - 9V min\n - 1.25A min (any available)"
 		(exclude_from_sim no)
@@ -7618,6 +7520,12 @@
 		(uuid "34290852-2a06-4a34-a639-3ec76f333b63")
 	)
 	(junction
+		(at 113.03 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "34a9d877-7f36-47c7-9cd7-62423c6067eb")
+	)
+	(junction
 		(at 69.85 200.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7696,6 +7604,12 @@
 		(uuid "60d0bd19-baf8-4b41-ae95-3f3373fa3064")
 	)
 	(junction
+		(at 54.61 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6258bf8c-7187-44da-8d2d-0a563b5d6013")
+	)
+	(junction
 		(at 104.14 323.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7720,16 +7634,16 @@
 		(uuid "6fd444c5-f3a5-4648-8548-85d63f09172b")
 	)
 	(junction
+		(at 54.61 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79b392c5-0ba5-41a5-8fd5-8fd146ce1685")
+	)
+	(junction
 		(at 104.14 361.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86bfab98-5f1e-4476-a97f-d8aa0fba1a36")
-	)
-	(junction
-		(at 113.03 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "86d38a88-4c0b-41a8-8e24-e02850765542")
 	)
 	(junction
 		(at 67.31 336.55)
@@ -7798,12 +7712,6 @@
 		(uuid "975232ca-4a83-45dc-aea5-94f5df0a394b")
 	)
 	(junction
-		(at 226.06 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b337acb-c280-45d0-a36e-57cdf532ef05")
-	)
-	(junction
 		(at 67.31 200.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7814,12 +7722,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a03b5d4f-e1da-452d-8aa4-1087595e66c0")
-	)
-	(junction
-		(at 210.82 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a0e15f95-a711-4dc4-bbce-63037a22c09a")
 	)
 	(junction
 		(at 162.56 308.61)
@@ -7888,12 +7790,6 @@
 		(uuid "c74eaf75-0cc8-44ca-868b-f7624b3ae810")
 	)
 	(junction
-		(at 210.82 186.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ca1e6443-8348-44b5-9070-ffecea4eb9c0")
-	)
-	(junction
 		(at 200.66 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7922,6 +7818,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e0c0f9be-3104-4c60-b840-ee6dd97cb976")
+	)
+	(junction
+		(at 74.93 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3b3d3ef-f7a0-41ae-9907-48555b8adada")
 	)
 	(junction
 		(at 138.43 200.66)
@@ -8181,6 +8083,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 80.01) (xy 74.93 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dd2df8f-587c-4064-b55e-cb39f2ff7a98")
+	)
+	(wire
+		(pts
 			(xy 184.15 328.93) (xy 184.15 330.2)
 		)
 		(stroke
@@ -8208,6 +8120,16 @@
 			(type default)
 		)
 		(uuid "10ecdfb9-2fd6-41d4-b190-fdc9be6016c0")
+	)
+	(wire
+		(pts
+			(xy 132.08 165.1) (xy 132.08 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11b0666a-7e31-4b9b-9bd2-8a296ff75561")
 	)
 	(wire
 		(pts
@@ -8331,13 +8253,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 186.69) (xy 210.82 186.69)
+			(xy 54.61 80.01) (xy 59.69 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f3c1363-6e76-422d-84bc-6187d8e54f40")
+		(uuid "1f93c5bb-034b-4c0c-8e7e-7a04ee7d18c9")
 	)
 	(wire
 		(pts
@@ -8348,6 +8270,16 @@
 			(type default)
 		)
 		(uuid "21114bc9-05f3-4546-a9a7-17417e23db17")
+	)
+	(wire
+		(pts
+			(xy 54.61 80.01) (xy 54.61 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21ecee50-e799-451a-817f-dc2bb1c06d33")
 	)
 	(wire
 		(pts
@@ -8441,7 +8373,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 73.66) (xy 76.2 73.66)
+			(xy 58.42 73.66) (xy 74.93 73.66)
 		)
 		(stroke
 			(width 0)
@@ -8541,6 +8473,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 68.58) (xy 59.69 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "345cf699-d50c-49d4-9be5-3055260e7a6c")
+	)
+	(wire
+		(pts
 			(xy 260.35 152.4) (xy 269.24 152.4)
 		)
 		(stroke
@@ -8631,6 +8573,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 80.01) (xy 74.93 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f4fb623-edb6-4809-a987-7b8c4891e167")
+	)
+	(wire
+		(pts
 			(xy 283.21 157.48) (xy 308.61 157.48)
 		)
 		(stroke
@@ -8658,6 +8610,16 @@
 			(type default)
 		)
 		(uuid "40690e88-6d45-488b-a5ec-b160f0da427a")
+	)
+	(wire
+		(pts
+			(xy 113.03 167.64) (xy 113.03 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41255145-0e8c-46b6-970f-5bf6510f8ef6")
 	)
 	(wire
 		(pts
@@ -8821,16 +8783,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 170.18) (xy 114.3 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5274e8ae-ee1c-418c-8ea4-b617045fa1e3")
-	)
-	(wire
-		(pts
 			(xy 91.44 359.41) (xy 91.44 361.95)
 		)
 		(stroke
@@ -8911,16 +8863,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 147.32) (xy 210.82 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dbebbb0-d335-4cc1-9d79-d35be27ceac3")
-	)
-	(wire
-		(pts
 			(xy 69.85 351.79) (xy 69.85 328.93)
 		)
 		(stroke
@@ -8991,6 +8933,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 167.64) (xy 114.3 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d641cf-d006-421e-83e6-e93d63931745")
+	)
+	(wire
+		(pts
 			(xy 205.74 39.37) (xy 205.74 78.74)
 		)
 		(stroke
@@ -9011,6 +8963,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 73.66) (xy 76.2 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "656eb54e-d62f-4624-8c2f-5a2a774a68fb")
+	)
+	(wire
+		(pts
 			(xy 172.72 167.64) (xy 172.72 176.53)
 		)
 		(stroke
@@ -9021,13 +8983,23 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 77.47) (xy 54.61 81.28)
+			(xy 54.61 77.47) (xy 54.61 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "665252b9-2490-4edf-bfce-1ab8b73c85fd")
+	)
+	(wire
+		(pts
+			(xy 132.08 167.64) (xy 144.78 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "697eb8a4-3a74-4f8a-bff9-d312fe627c8c")
 	)
 	(wire
 		(pts
@@ -9258,16 +9230,6 @@
 			(type default)
 		)
 		(uuid "7ae3b9f3-355f-4acf-be8e-b8bcc922ae1a")
-	)
-	(wire
-		(pts
-			(xy 226.06 152.4) (xy 226.06 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bab788b-6aba-4650-8b2d-66b631ab7162")
 	)
 	(wire
 		(pts
@@ -9511,16 +9473,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 167.64) (xy 226.06 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8eacaa25-9fce-470c-aa77-126bbe964990")
-	)
-	(wire
-		(pts
 			(xy 124.46 76.2) (xy 134.62 76.2)
 		)
 		(stroke
@@ -9628,16 +9580,6 @@
 			(type default)
 		)
 		(uuid "9a860429-7bf9-4296-9ab8-e5891302eb48")
-	)
-	(wire
-		(pts
-			(xy 210.82 147.32) (xy 220.98 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b881696-0b1b-42e9-8e30-acde94664eb4")
 	)
 	(wire
 		(pts
@@ -9838,16 +9780,6 @@
 			(type default)
 		)
 		(uuid "ad75b22e-5711-4b11-96da-833eea770439")
-	)
-	(wire
-		(pts
-			(xy 124.46 167.64) (xy 144.78 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adb48f85-76b1-49ea-95ae-3bf30dfeec81")
 	)
 	(wire
 		(pts
@@ -10061,7 +9993,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 163.83) (xy 113.03 170.18)
+			(xy 113.03 163.83) (xy 113.03 167.64)
 		)
 		(stroke
 			(width 0)
@@ -10118,6 +10050,16 @@
 			(type default)
 		)
 		(uuid "c9073327-3cb2-4f49-859c-3a55fd3db2b6")
+	)
+	(wire
+		(pts
+			(xy 54.61 68.58) (xy 54.61 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c967514c-1a89-4b85-8c49-6f7940e1a3d3")
 	)
 	(wire
 		(pts
@@ -10261,6 +10203,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 68.58) (xy 74.93 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9095973-caa5-4663-9b8c-7e5d043bd4da")
+	)
+	(wire
+		(pts
 			(xy 146.05 63.5) (xy 146.05 76.2)
 		)
 		(stroke
@@ -10301,6 +10253,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 165.1) (xy 132.08 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcdea38e-6381-46ce-bab0-f7e9338e09d2")
+	)
+	(wire
+		(pts
 			(xy 171.45 330.2) (xy 184.15 330.2)
 		)
 		(stroke
@@ -10338,6 +10300,16 @@
 			(type default)
 		)
 		(uuid "e03dd461-fdd2-42e1-9863-5e8321632db6")
+	)
+	(wire
+		(pts
+			(xy 74.93 68.58) (xy 74.93 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ae7d0c-4ae2-4e49-b0d1-17ff6c196edd")
 	)
 	(wire
 		(pts
@@ -10551,7 +10523,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 66.04) (xy 54.61 69.85)
+			(xy 54.61 66.04) (xy 54.61 68.58)
 		)
 		(stroke
 			(width 0)
@@ -10578,16 +10550,6 @@
 			(type default)
 		)
 		(uuid "f94d9f2b-ec58-4772-a72b-1f74a1e3f239")
-	)
-	(wire
-		(pts
-			(xy 210.82 186.69) (xy 220.98 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9e3699b-4cee-4e2b-8106-c241cdb8638e")
 	)
 	(wire
 		(pts
@@ -11684,7 +11646,7 @@
 		(uuid "30c0e265-f4b3-4fc0-952a-3c0d2c7adad7")
 	)
 	(label "MID_BATCHG"
-		(at 124.46 172.72 0)
+		(at 124.46 170.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11903,16 +11865,6 @@
 		)
 		(uuid "6a4d7d62-cbbe-4496-b45f-8248f920281f")
 	)
-	(label "PROBE_VGND"
-		(at 322.58 80.01 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "78ca8631-2ce9-4a1f-98ea-d1c8aea0456c")
-	)
 	(label "V_UNREG"
 		(at 31.75 133.35 0)
 		(effects
@@ -12112,16 +12064,6 @@
 			(justify right bottom)
 		)
 		(uuid "b7384aba-cbad-4238-94c7-de1f19c816b4")
-	)
-	(label "PROBE_VGND"
-		(at 312.42 87.63 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b73ae1bb-17de-40bb-9de4-28eb3b18c5bb")
 	)
 	(label "-V_BAT_D"
 		(at 113.03 186.69 180)
@@ -12375,6 +12317,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 287.02 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 287.02 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1d1c9b71-a8b5-4706-bb86-3fbb90ef1615")
 		)
@@ -12385,154 +12345,6 @@
 			(project "low-noise-power-probe"
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "blinken-rf:U.FL2PIN")
-		(at 226.06 186.69 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "02324664-7528-4c84-93c5-5bcf7c517ccc")
-		(property "Reference" "TP10"
-			(at 229.87 185.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "-2V5"
-			(at 229.87 187.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "rf-connectors:U.FL-Hirose"
-			(at 226.06 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 226.06 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C88374"
-			(at 226.06 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a15b3a93-103d-4977-93f0-58d6fb89d067")
-		)
-		(pin "2"
-			(uuid "3ec53ae7-5088-4a90-86df-68d6431ef3a8")
-		)
-		(pin "FEED"
-			(uuid "d5c8dd05-375c-4a88-a48a-9dd2754df864")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "TP10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-2V5")
-		(at 257.81 58.42 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "05034d70-84f3-4157-8162-bc32402eaee6")
-		(property "Reference" "#PWR0107"
-			(at 257.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-2V5"
-			(at 257.81 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 257.81 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 257.81 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 257.81 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f8a04db-dec9-40b4-97e2-f7aeffebe4b3")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -12610,6 +12422,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 290.83 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 290.83 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "407f596b-3255-44a5-bd9f-59548d5987a3")
 		)
@@ -12679,6 +12509,24 @@
 			)
 		)
 		(property "LCSC" "C134092"
+			(at 44.45 349.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 44.45 349.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 44.45 349.25 0)
 			(effects
 				(font
@@ -12772,93 +12620,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 257.81 54.61 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "08acabd9-540a-4ca8-a626-3d7fc8a1def1")
-		(property "Reference" "C3"
-			(at 259.715 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "DNP"
-			(at 259.715 57.785 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 256.8448 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 257.81 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 257.81 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C77020"
-			(at 257.81 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "GRM155R71H104KE14D"
-			(at 257.81 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "78b8a78b-0751-4f77-8868-df328b399d59")
-		)
-		(pin "2"
-			(uuid "761a5a3e-c981-4d82-892c-f0a749fa06bb")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 454.66 199.39 180)
 		(unit 1)
@@ -12922,6 +12683,24 @@
 			)
 		)
 		(property "LCSC" ""
+			(at 454.66 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 454.66 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 454.66 199.39 0)
 			(effects
 				(font
@@ -13018,6 +12797,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 184.15 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 184.15 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2f7cb135-2dff-4aaa-a932-79a69300d786")
 		)
@@ -13089,6 +12886,24 @@
 			)
 		)
 		(property "LCSC" "C238123"
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -13182,6 +12997,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 436.88 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 436.88 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7b4859db-dc20-4493-b51f-fed024b45594")
 		)
@@ -13267,6 +13100,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 180.34 332.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 180.34 332.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "19e850be-191b-42cd-9674-5747aa448ef2")
 		)
@@ -13341,6 +13192,24 @@
 			)
 		)
 		(property "LCSC" "C140388"
+			(at 444.5 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 444.5 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 444.5 148.59 0)
 			(effects
 				(font
@@ -13520,6 +13389,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 444.5 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 444.5 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a2c61650-37ef-460d-b2ff-df5c4fcfbc43")
 		)
@@ -13599,6 +13486,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 317.5 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 317.5 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8d396b7f-8591-4a96-9fe8-8b3918ce0c57")
 		)
@@ -13644,7 +13549,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2.2u"
 			(at 323.215 57.785 0)
 			(effects
 				(font
@@ -13680,7 +13585,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77020"
+		(property "LCSC" "C2999759"
 			(at 321.31 54.61 0)
 			(effects
 				(font
@@ -13689,7 +13594,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "GRM155R71H104KE14D"
+		(property "Part" "GRM155Z71A225KE44D"
+			(at 321.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 321.31 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 321.31 54.61 0)
 			(effects
 				(font
@@ -13785,6 +13708,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 372.11 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 372.11 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9237ef12-3d3f-4377-ae90-a06cb0f71c84")
 		)
@@ -13815,7 +13756,7 @@
 				)
 			)
 		)
-		(property "Value" "5k .1%"
+		(property "Value" "3.3k"
 			(at 80.01 69.85 90)
 			(effects
 				(font
@@ -13850,7 +13791,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2828621"
+		(property "LCSC" "C22978"
 			(at 80.01 73.66 0)
 			(effects
 				(font
@@ -13859,8 +13800,26 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "AR03BTCX5001"
+		(property "Part" ""
 			(at 80.01 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 80.01 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 80.01 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13878,94 +13837,6 @@
 			(project ""
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 322.58 83.82 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "24cc5287-6ebb-454f-9bd2-e876a3f3f6e3")
-		(property "Reference" "C30"
-			(at 324.485 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7u"
-			(at 324.485 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 321.6148 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 322.58 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 322.58 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C162420"
-			(at 322.58 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "GRM21BR61H475KE51L"
-			(at 322.58 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f1d69cfa-05fb-46ee-931e-34c91597f447")
-		)
-		(pin "2"
-			(uuid "660d7c01-b9df-4591-8ffb-9008ae706afe")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -14055,7 +13926,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2.2u"
 			(at 268.605 57.785 0)
 			(effects
 				(font
@@ -14091,7 +13962,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77020"
+		(property "LCSC" "C2999759"
 			(at 266.7 54.61 0)
 			(effects
 				(font
@@ -14100,7 +13971,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "GRM155R71H104KE14D"
+		(property "Part" "GRM155Z71A225KE44D"
+			(at 266.7 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 266.7 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 266.7 54.61 0)
 			(effects
 				(font
@@ -14132,7 +14021,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2a7dbe02-34f6-4393-8d27-9a2b810df248")
 		(property "Reference" "C12"
 			(at 194.945 180.34 0)
@@ -14197,6 +14086,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 193.04 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 193.04 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0cccf137-b2fa-4c79-87b1-2be6fbe6f137")
 		)
@@ -14231,7 +14138,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Amphenol 132203-12"
+		(property "Value" "Amphenol 901-10138"
 			(at 214.63 40.9331 0)
 			(effects
 				(font
@@ -14240,7 +14147,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal"
+		(property "Footprint" "rf-connectors:SMA_Amphenol_901-10138_Horizontal"
 			(at 212.09 39.37 0)
 			(effects
 				(font
@@ -14249,7 +14156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/1/amphs06488_1-2259725.pdf"
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/1/c901_10138-2451237.pdf"
 			(at 212.09 39.37 0)
 			(effects
 				(font
@@ -14267,7 +14174,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "KH-BNC50-3511"
+		(property "Part" "901-10138"
 			(at 212.09 39.37 0)
 			(effects
 				(font
@@ -14276,7 +14183,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2837587"
+		(property "LCSC" "C5541227 "
+			(at 212.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 212.09 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 212.09 39.37 0)
 			(effects
 				(font
@@ -14318,7 +14243,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2.2u"
 			(at 153.67 163.83 0)
 			(effects
 				(font
@@ -14354,7 +14279,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77020"
+		(property "LCSC" "C2999759"
 			(at 152.4 157.48 0)
 			(effects
 				(font
@@ -14363,7 +14288,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "GRM155R71H104KE14D"
+		(property "Part" "GRM155Z71A225KE44D"
+			(at 152.4 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 152.4 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 152.4 157.48 0)
 			(effects
 				(font
@@ -14437,6 +14380,24 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 			(at 308.61 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 308.61 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 308.61 170.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14529,6 +14490,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 104.14 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 104.14 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "243776bb-2815-48a0-aa5e-20a17dcf3f17")
 		)
@@ -14539,72 +14518,6 @@
 			(project ""
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+2V5")
-		(at 257.81 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "30b74c90-0f33-41fa-aaa8-0ed212bbcb30")
-		(property "Reference" "#PWR0106"
-			(at 257.81 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2V5"
-			(at 257.81 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 257.81 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 257.81 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 257.81 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab6e1960-13ac-4ea2-bafc-92055e76892e")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -14740,6 +14653,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 138.43 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 138.43 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "494e8de9-8352-4264-976e-5cbb090004b1")
 		)
@@ -14808,6 +14739,24 @@
 			)
 		)
 		(property "LCSC" "C2982180"
+			(at 91.44 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 91.44 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 91.44 355.6 90)
 			(effects
 				(font
@@ -14887,6 +14836,24 @@
 			)
 		)
 		(property "LCSC" "C2982180"
+			(at 69.85 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 69.85 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 69.85 355.6 90)
 			(effects
 				(font
@@ -14980,6 +14947,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 105.41 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 105.41 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a09ed001-b8ac-465b-b9ac-24b670e05818")
 		)
@@ -15050,6 +15035,33 @@
 			)
 		)
 		(property "Part" "ADP7142AUJZ-2.5"
+			(at 172.72 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C9900054564"
+			(at 172.72 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 172.72 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 172.72 149.86 0)
 			(effects
 				(font
@@ -15221,6 +15233,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 453.39 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 453.39 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "54c326a4-4444-4325-8e96-ac625701329a")
 		)
@@ -15300,6 +15330,24 @@
 			)
 		)
 		(property "Part" "GRM155R71H104KE14D"
+			(at 295.91 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 295.91 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 295.91 229.87 0)
 			(effects
 				(font
@@ -15395,6 +15443,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 457.2 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 457.2 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "48a75a47-ca63-4b69-9b76-3057cea936b5")
 		)
@@ -15405,94 +15471,6 @@
 			(project ""
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 312.42 83.82 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "48af3845-1471-4fe6-8117-2a1767bc5c74")
-		(property "Reference" "C29"
-			(at 314.325 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "4.7u"
-			(at 314.325 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 311.4548 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 312.42 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 312.42 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C162420"
-			(at 312.42 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "GRM21BR61H475KE51L"
-			(at 312.42 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "07524ce4-7ca7-4d10-a67c-615ed01d896d")
-		)
-		(pin "2"
-			(uuid "56298018-01b9-4ea9-b763-de22dac5151a")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -15550,7 +15528,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22775"
 			(at 273.05 223.52 0)
 			(effects
 				(font
@@ -15559,8 +15537,26 @@
 				(hide yes)
 			)
 		)
-		(property "Part" ""
+		(property "Part" "0603WAF1000T5E"
 			(at 273.05 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 273.05 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 273.05 223.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15635,7 +15631,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22775"
 			(at 273.05 160.02 0)
 			(effects
 				(font
@@ -15644,8 +15640,26 @@
 				(hide yes)
 			)
 		)
-		(property "Part" ""
+		(property "Part" "0603WAF1000T5E"
 			(at 273.05 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 273.05 160.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 273.05 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15806,6 +15820,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 304.8 245.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 304.8 245.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "10ae2dbd-9bf4-4b60-a5e1-888b70591f62")
 		)
@@ -15896,6 +15928,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 124.46 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 124.46 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "febce490-0e39-4bc7-84b5-f7f0faed0595")
 		)
@@ -15916,7 +15966,7 @@
 		(at 303.53 54.61 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "51e97ec0-58af-431b-a7c7-d7dd46aa83ed")
@@ -15929,7 +15979,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "2.2u"
 			(at 305.435 57.785 0)
 			(effects
 				(font
@@ -15965,7 +16015,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77020"
+		(property "LCSC" "C2999759"
 			(at 303.53 54.61 0)
 			(effects
 				(font
@@ -15974,7 +16024,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "GRM155R71H104KE14D"
+		(property "Part" "GRM155Z71A225KE44D"
+			(at 303.53 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 303.53 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 303.53 54.61 0)
 			(effects
 				(font
@@ -16062,6 +16130,24 @@
 		)
 		(property "Part" "TC0325B1001T5F"
 			(at 138.43 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 138.43 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 138.43 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16158,6 +16244,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 113.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 113.03 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2df043f2-0f1b-47ac-92ac-dd7fc2719a18")
 		)
@@ -16191,7 +16295,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2.2u"
 			(at 201.93 182.88 0)
 			(effects
 				(font
@@ -16227,7 +16331,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77020"
+		(property "LCSC" "C2999759"
 			(at 200.66 176.53 0)
 			(effects
 				(font
@@ -16236,7 +16340,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "GRM155R71H104KE14D"
+		(property "Part" "GRM155Z71A225KE44D"
+			(at 200.66 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 200.66 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 200.66 176.53 0)
 			(effects
 				(font
@@ -16333,6 +16455,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 87.63 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 87.63 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bd9e7ce2-f91c-47cd-8b33-36f2742b27e2")
 		)
@@ -16343,89 +16483,6 @@
 			(project "low-noise-power-probe"
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "blinken-rf:U.FL2PIN")
-		(at 226.06 147.32 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5eab6174-1b89-4ff9-a6f2-c6de4396fe8c")
-		(property "Reference" "TP5"
-			(at 229.87 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "+2V5"
-			(at 229.87 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "rf-connectors:U.FL-Hirose"
-			(at 226.06 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 226.06 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C88374"
-			(at 226.06 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f2b60b2d-0d7d-4043-a84c-8cdd96ceb606")
-		)
-		(pin "2"
-			(uuid "90a98aef-4cd6-49b0-8474-d262365da77a")
-		)
-		(pin "FEED"
-			(uuid "7b95ab98-1ea3-49de-add1-d5894fc1eaad")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -16502,6 +16559,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 454.66 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 454.66 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c4247ada-74a4-461f-964a-0d510b898404")
 		)
@@ -16543,17 +16618,18 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "61bc7f8c-1b44-4a2f-b160-368724e948b8")
 		(property "Reference" "R4"
-			(at 153.035 62.23 90)
+			(at 157.48 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1k .1%"
-			(at 163.83 62.23 90)
+		(property "Value" "1.21k 1% 100ppm/°C"
+			(at 157.48 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16587,7 +16663,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2989112"
+		(property "LCSC" "C22835"
 			(at 157.48 63.5 0)
 			(effects
 				(font
@@ -16596,8 +16672,26 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "TC0325B1001T5F"
+		(property "Part" "0603WAF1211T5E"
 			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 157.48 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 157.48 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16692,6 +16786,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 372.11 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 372.11 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "51b3d097-4262-423f-bd6e-562d5281e7e6")
 		)
@@ -16767,6 +16879,24 @@
 			)
 		)
 		(property "LCSC" "C2791798"
+			(at 201.93 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 201.93 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 201.93 78.74 90)
 			(effects
 				(font
@@ -16860,6 +16990,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 180.34 335.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 180.34 335.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c3c60aa3-3a89-4fd6-956c-7ba815a63c85")
 		)
@@ -16892,7 +17040,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA322"
+		(property "Value" "OPA354"
 			(at 107.95 70.485 0)
 			(effects
 				(font
@@ -16910,7 +17058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa322.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa354.pdf"
 			(at 104.14 76.073 0)
 			(effects
 				(font
@@ -16928,7 +17076,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2057629"
+		(property "LCSC" "C36384"
 			(at 104.14 76.2 0)
 			(effects
 				(font
@@ -16937,7 +17085,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "OPA322AIDBVR"
+		(property "Part" "OPA354AIDBVR"
+			(at 104.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 104.14 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 104.14 76.2 0)
 			(effects
 				(font
@@ -17034,6 +17200,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 251.46 336.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 251.46 336.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2c4dd3f5-f70a-4feb-9ac6-abbee7111d7c")
 		)
@@ -17048,7 +17232,7 @@
 	)
 	(symbol
 		(lib_id "blinken-misc:Dual_Battery_Cell")
-		(at 113.03 175.26 0)
+		(at 113.03 182.88 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17057,7 +17241,7 @@
 		(fields_autoplaced yes)
 		(uuid "6a55b855-e613-4a3a-b70e-90df740d90ca")
 		(property "Reference" "BT1"
-			(at 109.22 173.4184 0)
+			(at 109.22 181.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17066,7 +17250,7 @@
 			)
 		)
 		(property "Value" "Dual_Battery_Cell"
-			(at 116.84 174.6884 0)
+			(at 116.84 182.3084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17076,7 +17260,7 @@
 			)
 		)
 		(property "Footprint" "misc:Battery-holder-18650-MYOUNG-BH-18650-A1BJ021"
-			(at 113.03 173.736 90)
+			(at 113.03 181.356 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17085,7 +17269,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 173.736 90)
+			(at 113.03 181.356 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17094,7 +17278,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 113.03 175.26 0)
+			(at 113.03 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17103,7 +17287,7 @@
 			)
 		)
 		(property "LCSC" "C20606804"
-			(at 113.03 175.26 0)
+			(at 113.03 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17112,7 +17296,25 @@
 			)
 		)
 		(property "Part" "BH-18650-A1BJ021"
-			(at 113.03 175.26 0)
+			(at 113.03 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 113.03 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 113.03 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17137,6 +17339,110 @@
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "BT1")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 63.5 80.01 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "6b5c0740-4514-47c0-b41b-688f27b05601")
+		(property "Reference" "R34"
+			(at 59.055 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k .1%"
+			(at 69.85 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 63.246 81.026 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2989112"
+			(at 63.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "TC0325B1001T5F"
+			(at 63.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 63.5 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 63.5 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "735b4647-28df-41b5-84d3-b723f94033a3")
+		)
+		(pin "2"
+			(uuid "e78e4608-e1ae-45d9-8d41-79e1477df394")
+		)
+		(instances
+			(project "low-noise-power-probe"
+				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
+					(reference "R34")
+					(unit 1)
 				)
 			)
 		)
@@ -17213,6 +17519,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 474.98 207.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 474.98 207.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "db6a9750-b3ee-469d-a9cf-d81f3892116f")
 		)
@@ -17223,82 +17547,6 @@
 			(project ""
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 210.82 186.69 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6cea96bb-ee1e-45e9-a568-d42cc5449a15")
-		(property "Reference" "TP9"
-			(at 212.725 188.7219 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "-2V5"
-			(at 212.725 191.2619 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 205.74 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 205.74 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 210.82 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C238123"
-			(at 210.82 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f701dd7c-05e5-48b7-8e3a-4b033faa654d")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -17368,6 +17616,24 @@
 			)
 		)
 		(property "Part" "GRM155R71H104KE14D"
+			(at 283.21 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 283.21 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 283.21 167.64 0)
 			(effects
 				(font
@@ -17454,6 +17720,24 @@
 			)
 		)
 		(property "Part" "1N5819WS"
+			(at 210.82 312.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 210.82 312.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 210.82 312.42 0)
 			(effects
 				(font
@@ -17549,6 +17833,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 372.11 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 372.11 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "94d2116d-e95a-4562-82e9-aa27734e8c2c")
 		)
@@ -17613,7 +17915,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22775"
 			(at 273.05 152.4 0)
 			(effects
 				(font
@@ -17622,8 +17924,26 @@
 				(hide yes)
 			)
 		)
-		(property "Part" ""
+		(property "Part" "0603WAF1000T5E"
 			(at 273.05 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 273.05 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 273.05 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17698,7 +18018,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22775"
 			(at 273.05 217.17 0)
 			(effects
 				(font
@@ -17707,8 +18027,26 @@
 				(hide yes)
 			)
 		)
-		(property "Part" ""
+		(property "Part" "0603WAF1000T5E"
 			(at 273.05 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 273.05 217.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 273.05 217.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17749,7 +18087,7 @@
 				)
 			)
 		)
-		(property "Value" "10R 1% 200ppm/°C"
+		(property "Value" "2R2 1% 400ppm/°C"
 			(at 201.93 36.195 90)
 			(effects
 				(font
@@ -17784,7 +18122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "HQ03W5F100JT5E"
+		(property "Part" "0603WAF220KT5E"
 			(at 201.93 39.37 90)
 			(effects
 				(font
@@ -17793,7 +18131,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2791798"
+		(property "LCSC" "C22939"
+			(at 201.93 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 201.93 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 201.93 39.37 90)
 			(effects
 				(font
@@ -17891,7 +18247,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "784a1dfe-8801-4475-ac00-8ee341b09a33")
 		(property "Reference" "C5"
 			(at 148.59 161.29 0)
@@ -17948,6 +18304,24 @@
 			)
 		)
 		(property "Part" "GRM21BR61H475KE51L"
+			(at 144.78 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 144.78 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 144.78 157.48 0)
 			(effects
 				(font
@@ -18102,6 +18476,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 69.85 298.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 69.85 298.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e875add5-d704-4742-a755-5ae7a6a26c26")
 		)
@@ -18172,6 +18564,24 @@
 			)
 		)
 		(property "LCSC" "C238123"
+			(at 83.82 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 83.82 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 83.82 200.66 0)
 			(effects
 				(font
@@ -18257,6 +18667,24 @@
 		)
 		(property "Part" "WSE3099"
 			(at 194.31 314.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 194.31 314.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 194.31 314.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18356,6 +18784,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 31.75 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 31.75 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c6164f1d-4103-421a-b17e-04ff8576873b")
 		)
@@ -18436,6 +18882,24 @@
 			)
 		)
 		(property "Part" "AR03BTC5002A"
+			(at 87.63 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 87.63 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 87.63 44.45 0)
 			(effects
 				(font
@@ -18532,6 +18996,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 124.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 124.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ec4e38d4-62fb-4a60-b692-e0f14923435b")
 		)
@@ -18555,7 +19037,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "81c097ad-ed39-4043-ab1d-adca58ba3431")
 		(property "Reference" "C10"
 			(at 148.59 180.34 0)
@@ -18620,6 +19102,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 144.78 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 144.78 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c0d070e2-e3e0-4b42-b178-b2c9a114d4fa")
 		)
@@ -18653,7 +19153,7 @@
 				)
 			)
 		)
-		(property "Value" "Amphenol 132203-12"
+		(property "Value" "Amphenol 901-10138"
 			(at 54.61 34.925 0)
 			(effects
 				(font
@@ -18661,7 +19161,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal"
+		(property "Footprint" "rf-connectors:SMA_Amphenol_901-10138_Horizontal"
 			(at 54.61 39.37 0)
 			(effects
 				(font
@@ -18670,7 +19170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/1/amphs06488_1-2259725.pdf"
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/1/c901_10138-2451237.pdf"
 			(at 54.61 39.37 0)
 			(effects
 				(font
@@ -18688,7 +19188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "KH-BNC50-3511"
+		(property "Part" "901-10138"
 			(at 54.61 39.37 0)
 			(effects
 				(font
@@ -18697,7 +19197,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2837587"
+		(property "LCSC" "C5541227"
+			(at 54.61 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 54.61 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 54.61 39.37 0)
 			(effects
 				(font
@@ -18853,6 +19371,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 69.85 306.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 69.85 306.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "49416bf2-8ab6-4436-b48b-04b329c56380")
 		)
@@ -18933,6 +19469,24 @@
 			)
 		)
 		(property "Part" "AR03BTC5002A"
+			(at 427.99 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 427.99 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 427.99 201.93 0)
 			(effects
 				(font
@@ -19029,6 +19583,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 322.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 322.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "da7308eb-730c-484b-ac81-c30d51fbb591")
 		)
@@ -19099,6 +19671,24 @@
 			)
 		)
 		(property "LCSC" "C238123"
+			(at 210.82 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 210.82 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 210.82 167.64 0)
 			(effects
 				(font
@@ -19192,6 +19782,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 474.98 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 474.98 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "abdd91ab-8a58-46d3-b843-a3190278f761")
 		)
@@ -19275,7 +19883,7 @@
 	)
 	(symbol
 		(lib_id "blinken-misc:SW_3PDT_x3")
-		(at 119.38 170.18 0)
+		(at 119.38 167.64 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -19285,7 +19893,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a6b7ea1-b2df-4be9-8e4b-46dce27710cb")
 		(property "Reference" "SW1"
-			(at 119.38 165.1 0)
+			(at 119.38 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19293,7 +19901,7 @@
 			)
 		)
 		(property "Value" "SW_3PDT_x3"
-			(at 119.38 165.1 0)
+			(at 119.38 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19302,7 +19910,7 @@
 			)
 		)
 		(property "Footprint" "misc:Switch_3PDT_C&K_7301MD9ABE"
-			(at 119.38 170.18 0)
+			(at 119.38 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19311,7 +19919,7 @@
 			)
 		)
 		(property "Datasheet" "https://4donline.ihs.com/images/VipMasterIC/IC/CKCI/CKCI-S-A0001796527/CKCI-S-A0001796601-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0"
-			(at 119.38 170.18 0)
+			(at 119.38 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19320,7 +19928,7 @@
 			)
 		)
 		(property "Description" "Toggle Switch, Miniature, On-None-On, 3PDT, Non Illuminated, E Series, Through Hole, 7.5 A"
-			(at 119.38 170.18 0)
+			(at 119.38 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19329,7 +19937,25 @@
 			)
 		)
 		(property "Part" "E301MD1AGE"
-			(at 119.38 170.18 90)
+			(at 119.38 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 119.38 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 119.38 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19437,6 +20063,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 86.36 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 86.36 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fe9db0ef-6815-4753-9a9f-ca38e3784b0a")
 		)
@@ -19515,6 +20159,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 172.72 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 172.72 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "523a1fa7-de67-4d7c-8b4f-a88aea7b3e0b")
 		)
@@ -19547,7 +20209,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9dd4d043-8f25-4d35-afe9-0545cd5404af")
 		(property "Reference" "C7"
 			(at 194.945 161.29 0)
@@ -19604,6 +20266,24 @@
 			)
 		)
 		(property "Part" "GRM21BR61H475KE51L"
+			(at 193.04 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 193.04 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 193.04 157.48 0)
 			(effects
 				(font
@@ -19766,6 +20446,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 54.61 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 54.61 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f37a2a1b-86a3-425e-b440-efb47da62676")
 		)
@@ -19783,7 +20481,7 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse")
-		(at 113.03 181.61 180)
+		(at 113.03 173.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19792,7 +20490,7 @@
 		(fields_autoplaced yes)
 		(uuid "a493d134-f3c5-4b40-b851-be4793b0662e")
 		(property "Reference" "F4"
-			(at 115.57 181.6099 0)
+			(at 115.57 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19801,7 +20499,7 @@
 			)
 		)
 		(property "Value" "SMD1206-050C-24V"
-			(at 103.505 181.61 90)
+			(at 103.505 173.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19810,7 +20508,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
-			(at 111.76 176.53 0)
+			(at 111.76 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19820,7 +20518,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2402191603_BORN-SMD1206-050-30N_C6165188.pdf"
-			(at 113.03 181.61 0)
+			(at 113.03 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19829,7 +20527,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 113.03 181.61 0)
+			(at 113.03 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19838,7 +20536,7 @@
 			)
 		)
 		(property "LCSC" "C2843983"
-			(at 113.03 181.61 90)
+			(at 113.03 173.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19847,7 +20545,25 @@
 			)
 		)
 		(property "Part" "SMD1206-050C-24V"
-			(at 113.03 181.61 90)
+			(at 113.03 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 113.03 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 113.03 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19926,6 +20642,24 @@
 			)
 		)
 		(property "Part" "M-1305 5k"
+			(at 54.61 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 54.61 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 54.61 73.66 0)
 			(effects
 				(font
@@ -20025,6 +20759,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 184.15 316.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 184.15 316.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f34a4c13-ef5e-4d1d-88d7-6ab52b9757a8")
 		)
@@ -20103,6 +20855,24 @@
 			)
 		)
 		(property "Part" "LQW43FT100M0HL"
+			(at 173.99 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 173.99 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 173.99 78.74 90)
 			(effects
 				(font
@@ -20199,6 +20969,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 54.61 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 54.61 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "75486c8e-082b-4ffe-acc4-a9e22c65f893")
 		)
@@ -20286,6 +21074,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 488.95 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 488.95 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "61acc4f2-f01b-4a01-b9af-5de09ed19ec5")
 		)
@@ -20296,72 +21102,6 @@
 			(project ""
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+2V5")
-		(at 312.42 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b045784a-227b-43fc-9cb4-38c4d90c52aa")
-		(property "Reference" "#PWR0118"
-			(at 312.42 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2V5"
-			(at 312.42 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 312.42 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 312.42 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b1c0fc0b-4f36-46df-af9a-baa38db3246a")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -20422,6 +21162,24 @@
 			)
 		)
 		(property "LCSC" "C238123"
+			(at 83.82 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 83.82 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 83.82 133.35 0)
 			(effects
 				(font
@@ -20499,6 +21257,24 @@
 			)
 		)
 		(property "Part" "E301MD1AGE"
+			(at 113.03 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 113.03 195.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 113.03 195.58 90)
 			(effects
 				(font
@@ -20600,6 +21376,24 @@
 			)
 		)
 		(property "Part" "E301MD1AGE"
+			(at 113.03 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 113.03 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 113.03 138.43 90)
 			(effects
 				(font
@@ -20738,7 +21532,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MiniMELF"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 436.88 218.44 0)
 			(effects
 				(font
@@ -20765,7 +21559,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C393436"
+		(property "LCSC" "C19077392"
+			(at 436.88 218.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "BZT52B3V3"
+			(at 436.88 218.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 436.88 218.44 90)
 			(effects
 				(font
@@ -20861,6 +21673,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 298.45 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 298.45 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "32975e53-a466-452f-955c-4927c2f4faca")
 		)
@@ -20939,6 +21769,24 @@
 			)
 		)
 		(property "LCSC" "C28646272"
+			(at 317.5 245.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 317.5 245.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 317.5 245.11 90)
 			(effects
 				(font
@@ -21038,6 +21886,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 488.95 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 488.95 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f5a6240-9f5b-4cf9-b03d-3f13288898b6")
 		)
@@ -21118,6 +21984,24 @@
 		)
 		(property "LCSC" "C965799"
 			(at 129.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 129.54 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 129.54 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21207,6 +22091,24 @@
 			)
 		)
 		(property "Part" "BH-18650-A1BJ021"
+			(at 113.03 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 113.03 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 113.03 161.29 0)
 			(effects
 				(font
@@ -21309,6 +22211,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 52.07 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 52.07 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "674ecc39-3a0d-484c-b1e3-c31d5dfb78e0")
 		)
@@ -21389,6 +22309,24 @@
 			)
 		)
 		(property "Part" "AR03BTC5002A"
+			(at 427.99 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 427.99 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 427.99 218.44 0)
 			(effects
 				(font
@@ -21542,6 +22480,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 74.93 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 74.93 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2c13ec9e-358d-4701-aa90-22b7c2dc2fe6")
 		)
@@ -21614,6 +22570,24 @@
 		)
 		(property "LCSC" "C7471904"
 			(at 162.56 347.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 162.56 344.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 162.56 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21727,6 +22701,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 43.18 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 43.18 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2536cf87-322d-4ce8-a84b-7144034331ba")
 		)
@@ -21802,6 +22794,24 @@
 			)
 		)
 		(property "Part" "SMD1206-050C-24V"
+			(at 113.03 323.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 113.03 323.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 113.03 323.85 90)
 			(effects
 				(font
@@ -21954,6 +22964,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 69.85 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 69.85 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d79fd5d1-e5b7-44b0-8388-7694da15fee9")
 		)
@@ -22013,7 +23041,7 @@
 				)
 			)
 		)
-		(property "Value" "260R"
+		(property "Value" "270R"
 			(at 278.13 156.21 90)
 			(effects
 				(font
@@ -22048,7 +23076,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22966"
 			(at 273.05 157.48 0)
 			(effects
 				(font
@@ -22057,8 +23085,26 @@
 				(hide yes)
 			)
 		)
-		(property "Part" ""
+		(property "Part" "0603WAF2700T5E"
 			(at 273.05 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 273.05 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 273.05 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22144,6 +23190,24 @@
 			)
 		)
 		(property "Part" "SMD1206-050C-24V"
+			(at 63.5 293.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 63.5 293.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 63.5 293.37 90)
 			(effects
 				(font
@@ -22238,6 +23302,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 45.72 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 45.72 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f84557a6-6eea-4579-995e-6c270f2b4780")
 		)
@@ -22273,7 +23355,7 @@
 				)
 			)
 		)
-		(property "Value" "160R"
+		(property "Value" "150R"
 			(at 278.13 153.67 90)
 			(effects
 				(font
@@ -22308,7 +23390,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22808"
 			(at 273.05 154.94 0)
 			(effects
 				(font
@@ -22317,8 +23399,26 @@
 				(hide yes)
 			)
 		)
-		(property "Part" ""
+		(property "Part" "0603WAF1500T5E"
 			(at 273.05 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 273.05 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 273.05 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22405,6 +23505,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 104.14 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 104.14 355.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "114bf504-4222-4b30-a092-2a2bbb188bdf")
 		)
@@ -22438,7 +23556,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2.2u"
 			(at 201.93 163.83 0)
 			(effects
 				(font
@@ -22474,7 +23592,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77020"
+		(property "LCSC" "C2999759"
 			(at 200.66 157.48 0)
 			(effects
 				(font
@@ -22483,7 +23601,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "GRM155R71H104KE14D"
+		(property "Part" "GRM155Z71A225KE44D"
+			(at 200.66 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 200.66 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 200.66 157.48 0)
 			(effects
 				(font
@@ -22525,7 +23661,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2.2u"
 			(at 314.325 57.785 0)
 			(effects
 				(font
@@ -22561,7 +23697,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77020"
+		(property "LCSC" "C2999759"
 			(at 312.42 54.61 0)
 			(effects
 				(font
@@ -22570,7 +23706,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "GRM155R71H104KE14D"
+		(property "Part" "GRM155Z71A225KE44D"
+			(at 312.42 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 312.42 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 312.42 54.61 0)
 			(effects
 				(font
@@ -22666,6 +23820,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 283.21 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 283.21 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "92fee4b4-be80-4170-9fbe-8197731a17bf")
 		)
@@ -22699,7 +23871,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2.2u"
 			(at 153.67 182.88 0)
 			(effects
 				(font
@@ -22735,7 +23907,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77020"
+		(property "LCSC" "C2999759"
 			(at 152.4 176.53 0)
 			(effects
 				(font
@@ -22744,7 +23916,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "GRM155R71H104KE14D"
+		(property "Part" "GRM155Z71A225KE44D"
+			(at 152.4 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 152.4 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 152.4 176.53 0)
 			(effects
 				(font
@@ -22785,7 +23975,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA322"
+		(property "Value" "OPA354"
 			(at 160.02 73.025 0)
 			(effects
 				(font
@@ -22803,7 +23993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa322.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa354.pdf"
 			(at 156.21 78.613 0)
 			(effects
 				(font
@@ -22821,7 +24011,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2057629"
+		(property "LCSC" "C36384"
 			(at 156.21 78.74 0)
 			(effects
 				(font
@@ -22830,7 +24020,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "OPA322AIDBVR"
+		(property "Part" "OPA354AIDBVR"
+			(at 156.21 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 156.21 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 156.21 78.74 0)
 			(effects
 				(font
@@ -22930,72 +24138,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-2V5")
-		(at 322.58 87.63 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ecc2c798-df76-4821-8d7f-fc47f0a718aa")
-		(property "Reference" "#PWR0119"
-			(at 322.58 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-2V5"
-			(at 322.58 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 322.58 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 322.58 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 322.58 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "28b5a6f9-67f3-43ca-8e54-6d97f3f81b10")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "#PWR0119")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 156.21 312.42 0)
 		(mirror y)
@@ -23061,6 +24203,24 @@
 			)
 		)
 		(property "Part" "GRM21BR61H475KE51L"
+			(at 156.21 312.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 156.21 312.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 156.21 312.42 0)
 			(effects
 				(font
@@ -23156,6 +24316,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 372.11 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 372.11 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ae7772b9-3cb0-4c22-8038-12234168969a")
 		)
@@ -23233,6 +24411,24 @@
 			)
 		)
 		(property "Part" "TC0325B1001T5F"
+			(at 327.66 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 327.66 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 327.66 240.03 0)
 			(effects
 				(font
@@ -23326,6 +24522,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 317.5 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 317.5 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "5e0b9b83-5bb0-423a-bf2d-5e8f67bfaf0a")
 		)
@@ -23357,6 +24571,109 @@
 			(project ""
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 63.5 68.58 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(uuid "fac098ff-f81e-4822-bffb-56b37326f0f1")
+		(property "Reference" "R25"
+			(at 59.055 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k .1%"
+			(at 69.85 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 63.246 69.596 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2989112"
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "TC0325B1001T5F"
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 63.5 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 63.5 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04124d8b-47cc-4162-944d-3577246f099f")
+		)
+		(pin "2"
+			(uuid "e85ec42d-0671-4e01-b3bb-78ae6e2549ba")
+		)
+		(instances
+			(project "low-noise-power-probe"
+				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -23434,6 +24751,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 302.26 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 302.26 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e833aea1-e571-4b35-8ce6-243995a6494e")
 		)
@@ -23444,82 +24779,6 @@
 			(project "low-noise-power-probe"
 				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
 					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 210.82 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd4253a1-3d07-4e71-8061-965cdaadf808")
-		(property "Reference" "TP4"
-			(at 212.725 142.7479 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "+2V5"
-			(at 212.725 145.2879 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 215.9 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 210.82 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C238123"
-			(at 210.82 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "13839ec5-496c-445a-8069-096049b22049")
-		)
-		(instances
-			(project ""
-				(path "/91724399-a56b-44b9-b10d-a0a6a50c493c"
-					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -23596,6 +24855,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" ""
+			(at 76.2 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
+			(at 76.2 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8cc50743-e7c8-403e-91f2-6b890797498e")
 		)
@@ -23629,7 +24906,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2.2u"
 			(at 277.495 57.785 0)
 			(effects
 				(font
@@ -23665,7 +24942,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C77020"
+		(property "LCSC" "C2999759"
 			(at 275.59 54.61 0)
 			(effects
 				(font
@@ -23674,7 +24951,25 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "GRM155R71H104KE14D"
+		(property "Part" "GRM155Z71A225KE44D"
+			(at 275.59 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" ""
+			(at 275.59 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" ""
 			(at 275.59 54.61 0)
 			(effects
 				(font

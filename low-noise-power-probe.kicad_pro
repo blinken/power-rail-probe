@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.95,
-          "width": 0.875
+          "height": 2.4,
+          "width": 1.65
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.5
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -61,7 +61,23 @@
       ],
       "drc_exclusions": [
         [
+          "courtyards_overlap|178205000|130378577|74882c27-4609-42d1-b170-c7c9ff08b585|ff7f2cf0-2b94-46cf-9922-628ace1bc6e4",
+          ""
+        ],
+        [
+          "courtyards_overlap|218195000|136965116|13c7bfcd-6d72-4a87-882d-e6e64803058c|ff7f2cf0-2b94-46cf-9922-628ace1bc6e4",
+          ""
+        ],
+        [
           "footprint_type_mismatch|220609483|89545000|98e450c7-4a92-407d-b8d5-5b6b836dfdd0|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|177200000|133700000|034201f1-8e18-4028-9f4f-5df3548a4de4|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|177200000|133700000|74882c27-4609-42d1-b170-c7c9ff08b585|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -174,7 +190,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
+        "min_track_width": 0.1,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.45,
         "solder_mask_clearance": 0.0,
@@ -559,7 +575,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "low-noise-power-probe-v2.0.step",
       "svg": "",
       "vrml": ""
     },
